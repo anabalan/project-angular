@@ -1,0 +1,48 @@
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 45px 100px;
+}
+
+h1 {
+    width: 100%;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    margin: 0 auto;
+    display: block;
+    background-color: #80D1F4;
+    width: 40px;
+    height: 3px;
+}
+
+/* Repositórios */
+.repositorys {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    border: 1px solid red;
+}
+
+.repository {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 32%;
+    background-color: #282B30;
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 30px;;
+}
+
+p {
+    width: 100%;
+}
