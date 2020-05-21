@@ -1,0 +1,9 @@
+/* Geral */
+.navbar {
+    padding: 25px 50px;
+    background-color: #12171D !important;
+}
+
+.nav-item {
+    padding-left: 40px;
+}

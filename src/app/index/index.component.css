@@ -1,0 +1,88 @@
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 45px 300px;
+}
+
+h1 {
+    width: 100%;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    margin: 0 auto;
+    display: block;
+    background-color: #80D1F4;
+    width: 40px;
+    height: 3px;
+}
+
+/* Cards da equipe */
+.team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 45%;
+    background-color: #282B30;
+    border-radius: 25px;
+    padding: 40px;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    /* border-collapse: separate;
+	border-spacing: 15px;
+	border: 1px solid #80D1F4; */
+}
+
+.ana {
+    background-image: url(/assets/img/ana.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bea {
+    background-image: url(/assets/img/ana.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+a {
+    margin-top: 30px;
+    padding: 12px 40px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1.5px solid #80D1F4;
+    color: #80D1F4;
+    text-transform: uppercase;
+    transition:  0.8s;
+}
+
+a:hover {
+    background-color: #80D1F4;
+    color: #12171D;
+}
