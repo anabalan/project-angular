@@ -1,8 +1,16 @@
 <section>
     <h1>Repositórios</h1>
-    <div class="repositorys">
-        <div class="repository">
-            <p></p>
+    <div class="repositorys" *ngFor="let userRepo of userRepos">
+        <!-- Usuário -->
+        <div class="user">
+            <h2> {{userRepo.username}} </h2>
         </div>
+        
+        <!-- Respositórios -->
+        <div class="repository" *ngFor="let repo of userRepo.repos">
+            <p>Name {{ repo.name }}</p>
+            <p>Full name {{ repo.full_name }}</p>
+            <p>Link {{ repo.html_url }}</p>
+        </div> 
     </div>
 </section>

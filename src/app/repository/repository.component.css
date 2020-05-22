@@ -10,16 +10,31 @@ h1 {
     position: relative;
 }
 
+h2 {
+    width: 100%;
+    font-size: 20px;
+}
+
 h1::before {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: -15px;
     margin: 0 auto;
     display: block;
     background-color: #80D1F4;
     width: 40px;
     height: 3px;
 }
+
+/* Usuário */
+.user {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
 
 /* Repositórios */
 .repositorys {
@@ -28,8 +43,10 @@ h1::before {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    margin-top: 50px;
-    border: 1px solid red;
+    margin-top: 40px;
+    padding: 35px 35px 5px 35px;
+    border: 1px solid #282B30;
+    border-radius: 25px;
 }
 
 .repository {
@@ -40,7 +57,13 @@ h1::before {
     background-color: #282B30;
     border-radius: 25px;
     padding: 30px;
-    margin-bottom: 30px;;
+    margin-bottom: 30px;
+    transition: ease-in-out 0.7s;
+}
+
+.repository:hover {
+    transform: scale(0.95); 
+    cursor: pointer;
 }
 
 p {

@@ -10,7 +10,7 @@ const routes: Routes = [
   {path: '', component: IndexComponent},
   {path: 'repository', component: RepositoryComponent},
   {path: 'bitcoin', component: BitcoinComponent}
-];
+];  
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
