@@ -1,6 +1,6 @@
 <section>
     <h1>Bitcoin</h1>
-    <p class="att-bitcoin">Última atualização: </p>
+    <p class="att-bitcoin">Última atualização: {{ this.bitcoins.time.updated }}</p>
     <div class="container-bitcoin">
         <div class="img-bitcoin">
             <img src="assets/img/bitcoin.png">
@@ -9,7 +9,7 @@
             <!-- Card de cotação Real -->
             <div class="bitcoin-cotacao real">
                 <p>Real</p>
-                <p class="valor">R$ {{ this.bitcoins.bpi.BRL.rate_float}}</p>
+                <p class="valor">R$ {{ this.bitcoins.bpi.BRL.rate}}</p>
             </div>
             <!-- Card de cotação Dólar -->
             <div class="bitcoin-cotacao dolar">

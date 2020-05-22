@@ -39,6 +39,7 @@ export class RepositoryComponent implements OnInit {
     this.http.get<Repo[]>('https://api.github.com/users/anabalan/repos')
     .subscribe(data => {
       this.userRepos.push({
+        // definindo o username
         username: "anabalan",
         repos: data
       })
@@ -47,6 +48,7 @@ export class RepositoryComponent implements OnInit {
     this.http.get<Repo[]>('https://api.github.com/users/BeaCastro/repos')
     .subscribe(data => {
       this.userRepos.push({
+        // definindo o username
         username: "BeaCastro",
         repos: data
       })
