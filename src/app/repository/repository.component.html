@@ -8,8 +8,8 @@
         
         <!-- Respositórios -->
         <div class="repository" *ngFor="let repo of userRepo.repos">
-            <p>Name {{ repo.name }}</p>
-            <p>Full name {{ repo.full_name }}</p>
+            <p><span>Name:</span> {{ repo.name }}</p>
+            <p><span>Full name:</span> {{ repo.full_name }}</p>
             <div class="btn-visualizar">
                 <a [href]="repo.html_url">Visualizar repositório</a>
             </div>

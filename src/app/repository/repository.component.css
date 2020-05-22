@@ -26,6 +26,11 @@ h1::before {
     height: 3px;
 }
 
+span {
+    font-weight: 500;
+    margin-right: 7px;
+}
+
 /* Usuário */
 .user {
     display: flex;
