@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// Importando HTTP Client
 import { HttpClient } from '@angular/common/http';
 
 // Fazendo a tipagem dos dados referentes ao repositório
@@ -9,13 +10,13 @@ type Repo = {
   html_url: string;
 };
 
-// 
+// Array de usuários (Ana e Bea)
 type UserRepos = {
   username: string;
   repos: Repo[];
 }
 
-// criando uma interface. dentro dela declara os treco do mesmo modo que está no arquivo json
+// Criando uma interface. Dentro dela declarado mesmo modo que está no arquivo json
 @Component({
   selector: 'app-repository',
   templateUrl: './repository.component.html',
@@ -24,7 +25,7 @@ type UserRepos = {
 
 export class RepositoryComponent implements OnInit {
 
-  // nomeando o objeto como um todo
+  // Nomeando o objeto como um todo
   userRepos: UserRepos[] = [];
 
   constructor(private http: HttpClient) { }
@@ -33,7 +34,7 @@ export class RepositoryComponent implements OnInit {
     this.update();
   }
 
-  // chamando git
+  // Chamando git
   update() {
     this.http.get<Repo[]>('https://api.github.com/users/anabalan/repos')
     .subscribe(data => {
