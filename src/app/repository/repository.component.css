@@ -69,3 +69,27 @@ h1::before {
 p {
     width: 100%;
 }
+
+.btn-visualizar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+a {
+    margin-top: 30px;
+    padding: 12px 40px;
+    text-decoration: none;
+    /* border-radius: 30px;
+    border: 1.5px solid #80D1F4; */
+    color: #80D1F4;
+    text-transform: uppercase;
+    transition:  0.8s;
+}
+/* 
+a:hover {
+    background-color: #80D1F4;
+    color: #12171D;
+} */

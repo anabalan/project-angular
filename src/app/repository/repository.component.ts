@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+// Fazendo a tipagem dos dados referentes ao repositório
 type Repo = {
   id: number;
   name: string;
@@ -8,6 +9,7 @@ type Repo = {
   html_url: string;
 };
 
+// 
 type UserRepos = {
   username: string;
   repos: Repo[];

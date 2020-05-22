@@ -10,7 +10,9 @@
         <div class="repository" *ngFor="let repo of userRepo.repos">
             <p>Name {{ repo.name }}</p>
             <p>Full name {{ repo.full_name }}</p>
-            <p>Link {{ repo.html_url }}</p>
+            <div class="btn-visualizar">
+                <a [href]="repo.html_url">Visualizar repositório</a>
+            </div>
         </div> 
     </div>
 </section>
