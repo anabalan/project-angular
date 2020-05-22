@@ -5,16 +5,16 @@
         <div class="img-bitcoin">
             <img src="assets/img/bitcoin.png">
         </div>
-        <div class="cotacao">
+        <div class="cotacao" *ngIf="this.bitcoins">
             <!-- Card de cotação Real -->
             <div class="bitcoin-cotacao real">
                 <p>Real</p>
-                <p class="valor">R$ </p>
+                <p class="valor">R$ {{ this.bitcoins.bpi.BRL.rate_float}}</p>
             </div>
             <!-- Card de cotação Dólar -->
             <div class="bitcoin-cotacao dolar">
                 <p>Dólar</p>
-                <p class="valor">$ </p>
+                <p class="valor">{{ this.bitcoins.bpi.USD.rate_float | currency}}</p>
             </div> 
         </div>
     </div>
